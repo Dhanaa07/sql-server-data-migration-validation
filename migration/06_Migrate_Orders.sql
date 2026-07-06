@@ -36,7 +36,7 @@ Notes       : - Simple INSERT INTO ... SELECT approach only.
 */
 
 ------------------------------------------------------------------------------
--- Step 1: Log source row count before migration
+-- Log source row count before migration
 ------------------------------------------------------------------------------
 DECLARE @SourceCount   INT;
 DECLARE @TargetCount   INT;
@@ -49,7 +49,7 @@ FROM LegacyRetailDB.dbo.Orders;
 PRINT 'Source Order Count: ' + CAST(@SourceCount AS VARCHAR(10));
 
 ------------------------------------------------------------------------------
--- Step 2: Migrate order data with transformations applied
+-- Migrate order data with transformations applied
 --
 -- OrderID      : preserved exactly as-is from source
 -- CustomerID   : preserved exactly as-is from source (must exist in target)
@@ -113,7 +113,7 @@ BEGIN TRY
           );
 
     ------------------------------------------------------------------------------
-    -- Step 3: Log post-migration results
+    -- Log post-migration results
     ------------------------------------------------------------------------------
     SELECT @TargetCount = COUNT(*)
     FROM RetailReportingDB.dbo.Orders;
