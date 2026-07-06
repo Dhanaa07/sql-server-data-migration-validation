@@ -62,11 +62,7 @@ GO
 
 ------------------------------------------------------------------------------
 -- Example Usage:
---
 -- SELECT dbo.fn_FormatPhone('5551234567');      -- Returns '(555) 123-4567'
 -- SELECT dbo.fn_FormatPhone('555-123-4567');     -- Returns '(555) 123-4567'
--- SELECT dbo.fn_FormatPhone('(555)1234567');     -- Returns '(555) 123-4567'
--- SELECT dbo.fn_FormatPhone('555.123.4567');     -- Returns '(555) 123-4567'
--- SELECT dbo.fn_FormatPhone('12345');            -- Returns NULL
 -- SELECT dbo.fn_FormatPhone(NULL);               -- Returns NULL
 ------------------------------------------------------------------------------
