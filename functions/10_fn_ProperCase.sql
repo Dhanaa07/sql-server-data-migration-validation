@@ -53,9 +53,6 @@ GO
 
 ------------------------------------------------------------------------------
 -- Example Usage:
---
 -- SELECT dbo.fn_ProperCase('JOHN');        -- Returns 'John'
--- SELECT dbo.fn_ProperCase('jAnE');        -- Returns 'Jane'
--- SELECT dbo.fn_ProperCase(' michael ');   -- Returns 'Michael'
 -- SELECT dbo.fn_ProperCase(NULL);          -- Returns NULL
 ------------------------------------------------------------------------------
